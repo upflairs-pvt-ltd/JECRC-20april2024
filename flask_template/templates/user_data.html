@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>user data input</title>
+</head>
+<body style="background-color: aqua;">
+  
+    <h2>Please enter your data ! 😊</h2>
+    <form action="{{ url_for('submitdata') }}" method="post">
+        <label for="">Your Profession : </label>
+
+        <select name="profession" id="">
+            <option value="Faculty">Faculty</option>
+            <option value="student">student</option>
+            <option value="other">other</option>
+        </select>
+
+        <br><br>
+        <label for="">Your Name plz : </label>
+        <input type="text" name="name" required>
+
+        <br><br>
+        <label for="">Your Name email : </label>
+        <input type="email" name="email" required>
+
+        <br><br>
+        <label for="">Your Name password : </label>
+        <input type="password" name="password" required>
+<br><br>
+       <button type="submit">SUBMIT YOUR DATA</button>
+    </form>
+
+
+</body>
+</html>
