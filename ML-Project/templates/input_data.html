@@ -1,0 +1,63 @@
+<html>
+<head>
+
+    <title> INSURANCE EMI PREDICTION</title>
+</head>
+<body>
+  <h2>INPUT PAGE</h2>
+  <!-- age , gender ,bmi, smoker ,children,region  -->
+    <form action="{{ url_for('prediction') }}" method="post">
+        <label for="">select region</label>
+        <select name="region" id="">
+            <option value="ne">northeast</option>
+            <option value="nw">northwest</option>
+            <option value="se">southeast</option>
+            <option value="sw">southwest</option>
+        </select>
+
+
+<br><br>
+<label for="">select children</label>
+
+        <select name="children" id="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
+        </select>
+        <br><br>
+        <label for="">smoker</label>
+        <select name="smoker" id="">
+            <option value="1">yes</option>
+            <option value="0">no</option>
+
+        </select>
+
+
+        <br><br>
+        <label for="">gender</label>
+        <select name="gender" id="">
+            <option value="1">male</option>
+            <option value="0">female</option>
+
+        </select>
+
+<br><br>
+
+        <label for="">age</label>
+        <input type="text" name="age" required>
+<br><br>
+        <label for="">bmi</label>
+        <input type="text" name="bmi" required>
+
+        <br><br>
+        <button type="submit">submit data</button>
+
+    </form>
+
+
+</body>
+</html>
