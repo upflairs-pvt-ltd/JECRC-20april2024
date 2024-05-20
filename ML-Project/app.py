@@ -43,7 +43,7 @@ def prediction():
                 region_southeast,region_southwest]]
 
         pred = model.predict(user_data)[0]
-        return jsonify(pred)
+        return render_template('prediction.html' , output=str(pred))
 
 
 
