@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>email clssification project</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <form action="{{ url_for('predict') }}" method="post">
+            <h1>Submit Your email message</h1>
+            <!-- <form action="/submit" method="POST"> -->
+                <textarea name="email_message" placeholder="Enter your paragraph here..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
