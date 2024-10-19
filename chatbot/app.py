@@ -36,4 +36,6 @@ submit = st.button("submit")
 
 
 if submit:
-    get_response_from_gemini(question=question,image=imge)
+    output = get_response_from_gemini(question=question,image=imge)
+    st.subheader("Response is : ")
+    st.write(output) 
